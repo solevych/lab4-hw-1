@@ -11,7 +11,7 @@ public class KnightTest {
 
     @BeforeEach
     public void init() {
-        Knight character = new Knight();
+        character = new Knight();
     }
 
     @Test

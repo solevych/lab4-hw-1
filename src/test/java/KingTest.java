@@ -10,7 +10,7 @@ public class KingTest {
     private Character character;
 
     @BeforeEach
-    public void init() {King character = new King(); }
+    public void init() { character = new King(); }
 
     @Test
     public void testIsClass() {

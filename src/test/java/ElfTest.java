@@ -13,7 +13,7 @@ public class ElfTest {
 
     @BeforeEach
     public void init() {
-        Elf character = new Elf();
+        character = new Elf();
     }
 
     @Test
@@ -27,4 +27,5 @@ public class ElfTest {
         assertEquals(0, hobbit.getHp());
     }
 }
+
 

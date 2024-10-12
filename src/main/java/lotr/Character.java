@@ -32,11 +32,20 @@ public class Character {
     }
 
     public void decreaseHp(int amount) {
-        this.hp -= amount;
+        this.hp = Math.max(this.hp - amount, 0);
     }
 
     public void decreasePower(int amount) {
-        this.power -= amount;
+        this.power = Math.max(this.power - amount, 0);
+    }
+
+    public void setHp(int hp) {
+        this.hp = Math.max(hp, 0); // Ensure hp cannot be set to a negative value
+    }
+
+    @Override
+    public String toString() {
+        return this.getClass().getSimpleName() + "{hp=" + hp + ", power=" + power + "}";
     }
 }
 
